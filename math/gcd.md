@@ -1,8 +1,10 @@
-### 欧几里得算法
+### 最大公约数
 
 ```
 
-欧几里得算法又叫 辗转相除法 是一种计算两个数字的最大公约数 ( greatest common divisor ) 的有效方法
+计算两个数字的最大公约数 ( greatest common divisor ) 的有效方法  
+欧几里得算法又叫辗转相除法   
+更相减损法
 
 ```
 
@@ -15,6 +17,7 @@ const euclidean = (num1, num2) => {
   return (b === 0) ? a : euclidean(b, a % b)
 }
 
+//////////
 const euclidean = (num1, num2) => {
   let a = Math.abs(num1)
   let b = Math.abs(num2)
