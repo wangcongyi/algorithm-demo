@@ -35,3 +35,23 @@ const euclidean = (num1, num2) => {
 }
 
 ```
+
+### 最小公倍数
+
+```
+
+两个或多个整数公有的倍数叫做它们的公倍数  
+其中除0以外最小的一个公倍数就叫做这几个整数的最小公倍数
+
+两个数的乘积等于 两个数的最大公约数乘以最小公倍数
+所以 一般计算 两个数 最小公倍数的时候 可以运用 lcm(a, b) = a * b / gcd(a, b)
+
+```
+
+```js
+
+const function leastCommonMultiple(a, b) {
+  return ((a === 0) || (b === 0)) ? 0 : Math.abs(a * b) / euclidean(a, b);
+}
+
+```
