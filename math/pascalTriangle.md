@@ -4,6 +4,7 @@
 
 杨辉三角，是二项式系数在三角形中的一种几何排列  
 在欧洲，这个表叫做帕斯卡三角形
+下面 demo 只是计算某行的值  整个三角形类似
 
 ```
 ![PascalTriangle](https://github.com/wangcongyi/learning-algorithm/blob/master/images/t.gif)
@@ -22,6 +23,7 @@ const pascalTriangle = lineNumber => {
   return currentLine
 }
 
+////// 递归方法 /////
 const pascalTriangleRecursive = lineNumber => {
   if (lineNumber === 0) {
     return [1]
