@@ -24,6 +24,27 @@
 
 ```js
 
+const bwPowerSet = originalSet => {
+  const subSets = []
+  const numberOfCombinations = 2 ** originalSet.length
+
+  for (let combinationIndex = 0; combinationIndex < numberOfCombinations; combinationIndex += 1) {
+    const subSet = []
+
+    for (let setElementIndex = 0; setElementIndex < originalSet.length; setElementIndex += 1) {
+      if (combinationIndex & (1 << setElementIndex)) {
+        subSet.push(originalSet[setElementIndex])
+      }
+    }
+    subSets.push(subSet)
+  }
+
+  return subSets
+}
+
+//////////
+// 当然也可以循环遍历 回溯解决
+
 const btPowerSet = (originalSet, allSubsets = [[]], currentSubSet = [], startAt = 0) => {
 
   for (let position = startAt; position < originalSet.length; position += 1) {
@@ -35,5 +56,6 @@ const btPowerSet = (originalSet, allSubsets = [[]], currentSubSet = [], startAt 
 
   return allSubsets
 }
+
 
 ```
