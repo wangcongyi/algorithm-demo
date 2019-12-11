@@ -40,7 +40,7 @@ console.log(permutateWithoutRepetitions([0, 1, 2, 3]))
 
 /////////////////////////////////////
 // 排列可以重复的情况
-// 相当于 自行车的锁 我的是 五位  每位 0-9 个数  总共有 10000 个可能
+// 相当于 自行车的锁 我的是 五位  每位 0-9 个数  总共有 10^5 = 10000 个可能
 
 const permutateWithRepetitions = (permutationOptions, permutationLength = permutationOptions.length) => {
   if (permutationLength === 1) {
