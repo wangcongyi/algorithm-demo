@@ -7,6 +7,8 @@
 
 ```
 
+![permutation](https://github.com/wangcongyi/learning-algorithm/blob/master/images/x.png)
+
 ```js
 
 // 排列不可以重复的情况
