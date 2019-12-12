@@ -5,4 +5,5 @@
 
 
 ### Todo List
-- https://github.com/wangcongyi/learning-algorithm/blob/master/math/complexNumber.md
+- https://github.com/wangcongyi/learning-algorithm/blob/master/math/complexNumber.md  
+- https://github.com/wangcongyi/learning-algorithm/blob/master/sets/longestIncreasingSubsequence.md
