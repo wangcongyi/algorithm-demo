@@ -2,7 +2,8 @@
 
 ```
 
-先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序
+希尔排序也称增量递减排序算法 即跨多步版的 insertionSort
+insertionSort 可以看作 ShellSort 中 gap=1 的特例
 
 ```
 
