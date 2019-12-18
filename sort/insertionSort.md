@@ -12,8 +12,8 @@
 ```js
 
 const insertionSort = arr => {
-  var len = arr.length
-  var preIndex, current
+  const len = arr.length
+  let preIndex, current
   for (let i = 1; i < len; i++) {
     preIndex = i - 1
     current = arr[i]
