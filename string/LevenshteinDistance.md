@@ -7,6 +7,8 @@
 
 ```
 
+![莱文斯坦距离](https://github.com/wangcongyi/learning-algorithm/blob/master/images/levenshtein.png)
+
 ```js
 
 const levenshteinDistance = (a, b) => {
