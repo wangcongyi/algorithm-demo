@@ -11,7 +11,7 @@
 
 ```js
 
-const numberHammingDistance = (a, b) =>{
+const numberHammingDistance = (a, b) => {
   let d = 0
   let h = a ^ b
   while (h > 0) {
