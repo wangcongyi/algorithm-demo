@@ -11,6 +11,7 @@
 
 ```js
 
+// Brute Force solution
 // Complexity: O(n^2)
 const bfMaximumSubarray = inputArray => {
   let maxSubarrayStartIndex = 0
@@ -31,6 +32,7 @@ const bfMaximumSubarray = inputArray => {
 }
 
 ///////////////////////////////////
+// Dynamic Programming solution
 // Complexity: O(n)
 const dpMaximumSubarray = inputArray => {
   let maxSum = -Infinity
