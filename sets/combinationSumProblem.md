@@ -13,7 +13,13 @@ candidates 中的数字可以无限制重复被选取
 
 ```js
 
-const combinationSum = (candidates, remainingSum, finalCombinations = [], currentCombination = [], startFrom = 0) => {
+const combinationSum = (
+  candidates,
+  remainingSum,
+  finalCombinations = [],
+  currentCombination = [],
+  startFrom = 0,
+) => {
   if (remainingSum < 0) {
     return finalCombinations
   }
@@ -26,7 +32,13 @@ const combinationSum = (candidates, remainingSum, finalCombinations = [], curren
   for (let candidateIndex = startFrom; candidateIndex < candidates.length; candidateIndex += 1) {
     const currentCandidate = candidates[candidateIndex]
     currentCombination.push(currentCandidate)
-    combinationSum(candidates, remainingSum - currentCandidate, finalCombinations, currentCombination, candidateIndex)
+    combinationSum(
+      candidates,
+      remainingSum - currentCandidate,
+      finalCombinations,
+      currentCombination,
+      candidateIndex,
+    )
     currentCombination.pop()
   }
   return finalCombinations
