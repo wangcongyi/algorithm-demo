@@ -3,13 +3,9 @@ class LinkedListNode {
     this.value = value
     this.next = next
   }
-
-  toString(callback) {
-    return callback ? callback(this.value) : `${this.value}`
-  }
 }
 
-class LinkedList {
+export default class LinkedList {
   constructor() {
     this.head = null
     this.tail = null
