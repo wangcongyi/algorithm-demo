@@ -162,3 +162,53 @@ export default class DoublyLinkedList {
     return this
   }
 }
+
+
+class DoublyLinkedList {
+    constructor() {
+      this.head = null
+      this.tail = null
+    }
+
+    removeTail() {
+      const evict = this.tail
+      if (evict.prev !== null && this.tail != this.head) {
+        evict.prev.next = null
+        this.tail = evict.prev
+      } else {
+        this.tail = null
+        this.head = null
+      }
+      return evict.key
+    }
+
+    insertHead(node) {
+      if (this.head !== null) {
+        node.next = this.head
+        this.head.prev = node
+        this.head = node
+      } else {
+        this.head = node
+        this.tail = node
+      }
+    }
+
+    moveToHead(node) {
+      if (node === this.head) return
+      if (node === this.tail) {
+        node.next = this.head
+        this.head.prev = node
+        this.tail = node.prev
+        node.prev.next = null
+        node.prev = null
+      } else {
+        node.prev.next = node.next
+        node.next.prev = node.prev
+        node.next = this.head
+        node.next.prev = node
+        node.prev = null
+      }
+      this.head = node
+    }
+  }
+  
