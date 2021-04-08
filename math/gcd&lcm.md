@@ -50,7 +50,7 @@ const euclidean = (num1, num2) => {
 
 ```js
 
-const function leastCommonMultiple(a, b) {
+const leastCommonMultiple = (a, b) => {
   return ((a === 0) || (b === 0)) ? 0 : Math.abs(a * b) / euclidean(a, b);
 }
 
