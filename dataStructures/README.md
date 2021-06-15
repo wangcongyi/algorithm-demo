@@ -119,15 +119,15 @@
 
 每个在 `Tree`里的元素叫做 `node`,每个 `node` 至少有0个 `child nodes`。如果一个节点没有子节点，我们叫它 `Leaf Nodes`。每个树都有深度，上图所示 深度为4。  
 
-### Binary Trees (以下解释有可能有误，最好还是看英文文献，中文的解释像坨屎)
+### Binary Trees (以下解释有可能国外与国内有出入，先按照国外为准)
 
-![Binary Trees](https://www.interviewcake.com/images/svgs/trees__binary_non_binary.svg?bust=183)  
+![Binary Trees](https://www.interviewcake.com/images/svgs/trees__binary_non_binary.svg)  
 二叉树是指 在树节点中 最多有两个子节点  
 
-![Full binary trees](https://www.interviewcake.com/images/svgs/trees__full_binary.svg?bust=183)  
+![Full binary trees](https://www.interviewcake.com/images/svgs/trees__full_binary.svg)  
 满二叉树是指 每个节点 有0个或者2个 子节点  
 
-![Perfect binary trees](https://www.interviewcake.com/images/svgs/trees__perfect_binary.svg?bust=183)  
+![Perfect binary trees](https://www.interviewcake.com/images/svgs/trees__perfect_binary.svg)  
 平衡二叉树是指 每个节点只有2个子节点 所有 `leaf node` 在同一个深度  
  
 `Relationship between height and number of nodes`  
@@ -138,12 +138,12 @@
  n = 2^h - 1  
  h = log2(n+1)
 
-![Complete binary trees](https://www.interviewcake.com/images/svgs/trees__complete_binary.svg?bust=183)  
+![Complete binary trees](https://www.interviewcake.com/images/svgs/trees__complete_binary.svg)  
 完全二叉树是指 满二叉树最后的 `leaf node` 在最左边或者最右边
   
 
 # Graph
-![Graph](https://www.interviewcake.com/images/svgs/graph_coloring__nodes_and_edges.svg?bust=195)  
+![Graph](https://www.interviewcake.com/images/svgs/graph_coloring__nodes_and_edges.svg)  
 
 图就像是个关系网一样，树的节点之间是一对多的关系，并存在父与子的层次划分，而图的顶点（vertex）之前是多对多的关系，并且所有  
 顶点都是平等的。顶点之间的关联关系被称为边（edges）。  
