@@ -146,7 +146,8 @@
 [可视化红黑树](https://www.cs.usfca.edu/~galles/visualization/RedBlack.html)  
 [红黑树详解](http://cruisesun.top/articles/2021/02/27/1614408834256.html)  
 [数据结构-红黑树](http://www.btechsmartclass.com/data_structures/red-black-trees.html)  
-[红黑树-插入](https://www.geeksforgeeks.org/red-black-tree-set-2-insert/)
+[红黑树-插入](https://www.geeksforgeeks.org/red-black-tree-set-2-insert/)  
+[使用 javascript 实现红黑树](https://github.com/mikolalysenko/functional-red-black-tree/blob/master/rbtree.js)
 
 
 
