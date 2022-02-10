@@ -87,3 +87,13 @@ const fastPowering = (base, power) => {
 
 ```
 
+
+### 判断数字有几位  不转移成字符串的形式
+
+```js
+
+const len = Math.ceil(Math.log10(num + 1))
+
+```
+
+
