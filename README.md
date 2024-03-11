@@ -8,3 +8,4 @@
 - [最长递增子序列 O(n⋅logn) 算法优化](https://github.com/wangcongyi/learning-algorithm/blob/master/sets/longestIncreasingSubsequence.md)  
 - [缺少数据结构实现](https://github.com/wangcongyi/learning-algorithm/blob/master/tree/Breadth-First%20Search.md)
 - [缺少数据结构实现](https://github.com/wangcongyi/learning-algorithm/blob/master/graphs/Kruskal's%20Algorithm.md)
+- [改变世界的 17 个方程](https://runjs.app/blog/equations-that-changed-the-world-rewritten-in-javascript#the-pythagorean-theorem)
