@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  // Fisher-Yates 洗牌算法
+  const shuffleArray = (arr) => {
+    const shuffledArray = [...arr];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+
+    return shuffledArray;
+  }
+
+  const array = [1, 2, 3, 4, 5];
+  const shuffledArray = shuffleArray(array);
+
+  console.log(shuffledArray); // 输出类似 [3, 2, 1, 5, 4]
+
+  /////////////////////////////////////////////////
+  // Naive Shuffle (简单但不安全的方法)
+  function naiveShuffle(arr) {
+    const shuffledArray = [...arr];
+    for (let i = 0; i < shuffledArray.length * 2; i++) {
+      const j = Math.floor(Math.random() * shuffledArray.length);
+      const k = Math.floor(Math.random() * shuffledArray.length);
+      [shuffledArray[j], shuffledArray[k]] = [shuffledArray[k], shuffledArray[j]];
+    }
+    return shuffledArray;
+  }
+
+  const array = [1, 2, 3, 4, 5];
+  const shuffledArray = naiveShuffle(array);
+
+  console.log(shuffledArray); // 输出类似 [2, 4, 5, 1, 3]
+
+
+  /////////////////////////////////////
+  // 使用排序结合随机数
+  function randomSortShuffle(arr) {
+    return arr.sort(() => Math.random() - 0.5);
+  }
+
+  const array = [1, 2, 3, 4, 5];
+  const shuffledArray = randomSortShuffle(array);
+
+  console.log(shuffledArray); // 输出类似 [3, 1, 5, 4, 2]
+
+
+  ///////////////////////////////////////////
+  // 基于随机索引的洗牌
+  function randomIndexShuffle(arr) {
+    const shuffledArray = [...arr];
+    for (let i = 0; i < shuffledArray.length; i++) {
+      const randomIndex = Math.floor(Math.random() * shuffledArray.length);
+      [shuffledArray[i], shuffledArray[randomIndex]] = [shuffledArray[randomIndex], shuffledArray[i]];
+    }
+    return shuffledArray;
+  }
+
+  const array = [1, 2, 3, 4, 5];
+  const shuffledArray = randomIndexShuffle(array);
+
+  console.log(shuffledArray); // 输出类似 [1, 5, 3, 4, 2]
+
+  //   Fisher-Yates 洗牌: 这是最推荐的洗牌算法，具有 O(n) 的时间复杂度，并且能保证每个排列出现的概率相等，是真正的公平和高效的洗牌算法。
+  //   Naive Shuffle: 简单易懂，但效率不高且难以保证公平性，通常不推荐在生产环境中使用。
+  //   Random Sort: 虽然代码简洁，但不能保证公平性，不适合用来做真正的随机洗牌。
+  //   Random Index Shuffle: 类似于 Fisher-Yates，但如果实现不当，可能会导致偏差。
+  //   在实际应用中，Fisher-Yates 洗牌算法无疑是最佳选择，因为它既高效又能够保证完全的随机性。
+</script>
+</body>
+</html>
